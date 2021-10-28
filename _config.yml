@@ -1,13 +1,13 @@
 # Site settings
-title: Tianhaoo Blog
-SEOTitle: tianhaoo
-header-img: img/post-bg-desk.jpg
-email: 360726539@qq.com
-description: ""
-keyword: "tianhaoo, 田浩的博客, tianhao, 田浩, 博客, 程序员, 技术博客, 代码"
-url: "https://tianhaoo.github.io"          # your host, for absolute URL
+title: Fat P-Man Blog
+SEOTitle: zwp
+header-img: img/post-bg-desk.png
+email: 308928125@qq.com
+description: "my way is mine"
+keyword: "博客, 程序员, 技术博客, 代码"
+url: "https://00zwp.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/tianhaoo/tianhaoo.github.io.git" # you code repository
+github_repo: "https://github.com/00zwp/00zwp.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -18,12 +18,12 @@ sidebar-avatar: /img/about-me.jpg      # use absolute URL, seeing it's used in b
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
-# zhihu_username:     tian-hao-3-42
-github_username:    tianhaoo
-# facebook_username:  baiying.qiu.7
-# jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
+# weibo_username:     none
+# zhihu_username:     none
+github_username:    00zwp
+# facebook_username:  none
+# jianshu_username:   none
+#twitter_username:   none
 
 
 
@@ -57,11 +57,11 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
+# disqus_username: Bug-z
 
 # Gitalk
 gitalk:
-  enable: true    #是否开启Gitalk评论
+  enable: false    #是否开启Gitalk评论
   clientID: 16dfcdae9df2872d2666                            #生成的clientID
   clientSecret: 051fd8c439d94724ef41e4814f32617101e6aa21    #生成的clientSecret
   repo: tianhaoo.github.io    #仓库名称
