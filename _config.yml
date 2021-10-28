@@ -131,3 +131,5 @@ friends: [
         href: "https://kalicn.github.io/"
     }       
 ]
+
+theme: jekyll-theme-midnight
