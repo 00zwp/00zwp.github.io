@@ -1,9 +1,14 @@
 # Site settings
+permalink: /:year/:month/:day/:title.html
+paginate: 10  
 title: Fat P-Man Blog
 SEOTitle: zwp
+author: 
+    name: zwp
+    email: 308928125@qq.com
+    description: "my way is mine"
+
 header-img: img/post-bg-desk.png
-email: 308928125@qq.com
-description: "my way is mine"
 keyword: "博客, 程序员, 技术博客, 代码"
 url: "https://00zwp.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -48,7 +53,8 @@ gems: [jekyll-paginate]
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
+# markdown: kramdown  zwp
+markdown: redcarpet 
 highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
