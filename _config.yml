@@ -16,7 +16,7 @@ github_repo: "https://github.com/00zwp/00zwp.github.io.git" # you code repositor
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: ""
+sidebar-about-description: "just do it!"
 sidebar-avatar: /img/about-me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -94,7 +94,7 @@ featured-condition-size: 1              # 相同标签数量大于这个数，�
 
 
 # Progressive Web Apps
-chrome-tab-theme-color: "#000000"
+chrome-tab-theme-color: "#000001"
 service-worker: true
 
 
@@ -104,37 +104,7 @@ friends: [
     {
         title: "Tianhaoo's Site",
         href: "http://120.79.74.49/"
-    },{
-        title: "fleschier",
-        href: "https://fleschier.github.io/"
-    },{
-        title: "jiyiren",
-        href: "http://jiyiren.github.io/"
-    },{
-        title: "Shuming",
-        href: "https://shuming9886.github.io"
-    },{
-        title: "aitical",
-        href: "https://aitical.github.io/"
-    },{
-        title: "pevensey",
-        href: "https://pevensay.github.io/"
-    },{
-        title: "dcc",
-        href: "https://dcc.cat/"
-    },{
-        title: "paladnix",
-        href: "https://paladnix.github.io/"
-    },{
-        title: "liontao",
-        href: "https://liontao.xin/"
-    },{
-        title: "SUMSC",
-        href: "https://sumsc.github.io/"
-    },{
-        title: "kalicn",
-        href: "https://kalicn.github.io/"
-    }       
+    }
 ]
 
 theme: jekyll-theme-midnight
