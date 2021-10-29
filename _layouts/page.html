@@ -181,18 +181,15 @@ layout: default
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                                     </span>
-                                    <p>😊{{site.github_username}}</p>
                                 </a>
                             </li>
                             {% endif %}
                             
                         </ul>
-                        {% if site.author.email %}
-                            <p>✉️ {{site.author.email}}</p>
-                        {% endif %}
-
-                        {% if site.author.name %}
-                        <p>💕 {{site.author.name}}</p>
+                        {% if site.author %}
+                        <p>🎨{{site.author.name}}</p>
+                        <p>😊{{site.description}}</p>
+                        <p>✉️{{site.author.email}}</p>
                         {% endif %} 
                     </div>
                 </section>
