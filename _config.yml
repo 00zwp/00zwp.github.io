@@ -2,7 +2,9 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10  
 title: Fat P-Man Blog
+
 SEOTitle: zwp
+
 author: 
     name: zwp
     email: 308928125@qq.com
