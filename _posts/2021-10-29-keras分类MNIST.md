@@ -66,6 +66,8 @@ tags: Papers
 
 更多保存方式的介绍可以如图。
 
+(https://www.tensorflow.org/guide/keras/save_and_serialize?hl=zh-cn)
+
 ！[savemodel](/img/20211029/2.png)
 
 ### fifth
