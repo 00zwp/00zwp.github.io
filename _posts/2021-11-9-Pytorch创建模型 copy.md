@@ -47,3 +47,7 @@ optimizer.step()
 ```
 
 完整代码可以参见[工程](https://github.com/00zwp/Project211108)
+
+#### 体会
+
+1. model.eval() 与 model 
