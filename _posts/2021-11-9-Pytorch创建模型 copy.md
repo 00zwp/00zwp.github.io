@@ -48,6 +48,21 @@ optimizer.step()
 
 完整代码可以参见[工程](https://github.com/00zwp/Project211108)
 
+#### 模型保存与读取
+
+保存与读取的时候格式要相互匹配。
+
+```python
+
+```
+
+
 #### 体会
 
-1. model.eval() 与 model 
+1. model.eval() 与 model.train()  在模型训练和测试的时候要保持好逻辑关系
+
+2. 如果想要查看模型特定的参数 1 for name in model.state_dict(): 2 model.named_parameters() 3 for layer in model.modules():
+    for layers in torchmodel.modules():
+    print(layers.requires_grad_()) 固定某层
+    一个是设置不要更新参数的网络层为false，另一个就是在定义优化器时只传入要更新的参数。当然最优的做法是，优化器中只传入requires_grad=True的参数，这样占用的内存会更小一点，效率也会更高。
+
