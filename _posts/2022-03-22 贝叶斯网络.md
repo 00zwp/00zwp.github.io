@@ -1,0 +1,27 @@
+---
+layout: post
+title: Problems
+description: ""
+subtitle: ""
+data: 2021-12-22
+author: Fat-Pman 
+header-img: img/post-bg/25.jpg
+catalog: true
+tags: python
+---
+
+#### 获取指定文件夹下所有文件名
+
+##### os.walk()
+
+```python
+    os.walk(path)  #以列表返回各个文件下的文件
+    #一般使用
+    for i, (path, dirfile, file) in enumerate(os.walk(source_path)):
+```
+
+##### os.listdir()
+
+```python
+    os.listdir()  #以列表返回下级文件
+```

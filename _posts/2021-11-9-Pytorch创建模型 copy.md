@@ -17,6 +17,9 @@ tags: Pytorch, attack and defense,
 #### torch模型的定义
 
 一般来说，都会创建一个类（继承torch.nn.Module）作为模型。一开始入门，只需要关注两个函数。
+
+<font color=blue> 特别用来提醒自己 torch的全连接和keras的全连接不同</font>
+
 ```python
 def __init__(self):
 #用来完成模型的细节定义
@@ -53,9 +56,12 @@ optimizer.step()
 保存与读取的时候格式要相互匹配。
 
 ```python
+    torch.save(torchmodel.state_dict(), path)
+    Mymodel.load_state_dict(torch.load(path))
 
+    torch.save(torchmodel, path)
+    Mymodel = torch.load(path)
 ```
-
 
 #### 体会
 
@@ -66,3 +72,24 @@ optimizer.step()
     print(layers.requires_grad_()) 固定某层
     一个是设置不要更新参数的网络层为false，另一个就是在定义优化器时只传入要更新的参数。当然最优的做法是，优化器中只传入requires_grad=True的参数，这样占用的内存会更小一点，效率也会更高。
 
+### 更新 11.25 ———— 查看参数以及提取某层特定输出
+
+提取某层的输出比较简单的方法就是在forward内部，对需要记录的数据保存下来。
+在forward函数内，对数据保存，以load——state保存模型互不干扰！！！
+
+另外一种，实用的方法就是hook，钩子方法。
+
+主要实现途径是设置函数hook，完成对output的一些操作，例如保存。在通过把某个层与hook函数挂上关系，就可以实现。
+<font color=red >但一定要在最后取消hook。</font>
+```python 
+    activation = {}
+    def get_activation(name):
+        def hook(model, input, output):
+            # 如果你想feature的梯度能反向传播，那么去掉 detach（）
+            activation[name] = output.detach()
+        return hook
+    h = model.dense[0].register_forward_hook(get_activation('希望的输出'))
+    
+    !!!!
+    h.remove()
+```
