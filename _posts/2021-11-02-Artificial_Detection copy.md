@@ -7,7 +7,7 @@ data: 2021-11-2
 author: Fat-Pman
 header-img: img/post-bg/3.jpg
 catalog: true
-tags: Papers, Federated Learning, Defense
+tags: Papers Federated-Learning Defense
 ---
 
 ### Artificial Intelligence for Detection, Estimation, and Compensation of Malicious Attacks in Nonlinear Cyber-Physical Systems and Industrial IoT
