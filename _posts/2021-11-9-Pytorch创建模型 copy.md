@@ -7,7 +7,7 @@ data: 2021-11-8
 author: Fat-Pman 
 header-img: img/post-bg/5.jpg
 catalog: true
-tags: Pytorch, attack and defense,
+tags: Pytorch, defense,
 ---
 
 ### Pytorch创建模型
