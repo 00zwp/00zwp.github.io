@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Problems
+title: Foolbox
 description: ""
 subtitle: ""
 data: 2021-12-22
